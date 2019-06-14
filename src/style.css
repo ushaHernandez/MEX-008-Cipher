@@ -1,0 +1,31 @@
+body{
+    text-align: center;
+    background-color: deepskyblue;
+}
+
+input#input-text{
+    width: 600px;
+    height: 300px;
+}
+
+button#button-key{
+    width: 400px;
+    height: 25px;
+    content: "\f112";
+}
+::placeholder{
+    text-align: center;
+    font-size: large;
+}
+p{
+  font-family: Impact;  
+}
+h1{
+    font-family: Georgia;
+    font-size: large;
+
+}
+h2{
+    font-family: serif;
+    font-size: medium;
+}
