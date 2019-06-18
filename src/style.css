@@ -1,31 +1,87 @@
-body{
+
+@import url('https://fonts.googleapis.com/css?family=Acme|Lobster|Permanent+Marker&display=swap');
+
+.hide {
+    display: none;
+}
+*{
+    margin:0px;
+    padding :0px;
+}
+header{
+    font-family: 'Lobster', cursive;
+}
+
+body{ 
+    background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
-    background-color: deepskyblue;
 }
 
 input#input-text{
     width: 600px;
-    height: 300px;
+    height: 200px;
+    background-color: tan;
+    font-family: 'Permanent Marker', cursive;
+    
 }
 
-button#button-key{
-    width: 400px;
-    height: 25px;
-    content: "\f112";
-}
+
+
 ::placeholder{
     text-align: center;
     font-size: large;
 }
 p{
-  font-family: Impact;  
+    font-family: 'Acme', sans-serif;
+    font-size: x-large;
+    font-weight: 800;
+    font-style: italic;
+    color: aliceblue;
 }
-h1{
-    font-family: Georgia;
-    font-size: large;
+p#exit-box{
+    background-color: #F3E2A9;
+    width: 600px;
+    height: 200px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: black
+}
+
+
+h2{
+    font-family: 'Permanent Marker', cursive;
+    font-size: xx-large;
+    font-weight: 500;
+    color: beige;
 
 }
-h2{
-    font-family: serif;
+h3{
+    font-family: 'Acme', sans-serif;
+    font-size: x-large;
+    font-weight: 500;
+    color: beige;  
+}
+label#key{
+    font-family: 'Acme', sans-serif;
     font-size: medium;
+    font-weight: 700;
+}
+
+button{
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    
+   text-shadow: 3px 2px 1px#9daef5;
+  -webkit-box-shadow: 6px 5px 24px #666666;
+  -moz-box-shadow: 6px 5px 24px #666666;
+  box-shadow: 6px 5px 24px #666666; 
+  
+  font-family: 'Permanent Marker', cursive;
+  font-size: 27px;
+  padding: 19px;
+  text-decoration: none;
+  margin-bottom: 25px;
 }

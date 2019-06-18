@@ -5,29 +5,56 @@
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <div id="root">
-      <h1>KEyWords</h1>
-      <h2>Tu llavero Personal Digital</h2>
-         <section id='primera-seccion'>
-         <h1>cuantos e_mails diferentes tienes ? recuerdas las contraseñas de todos ?
-            cuantas vesces las haz tenido que cambiar ? o simplemente la memoria ya no es la misma</h1>
-            <h2>Bienvenido al sitio  donde con tan solo un click podras guardar tus contraseñas y datos teniendolos siempre a la mano 
-                y mucho mas confiable que un papel que encontrste en la mesa o el sobre del banco 
-                 </h2>
+  <body background="imagenes/fondo-key.jpg">
+    
+    <header>
+        <h1>KEyWords <br>
+        Tu Llavero Personal Digital </h1>
+        <img src="imagenes\authentication.png" width="200px" height="200px"> 
+        
+    </header>
+
+
+
+
+      
+      <section id="primera-seccion">
+         <h2>¿Cuántos e-mails diferentes tienes? ¿Recuerdas las contraseñas de todos?<br>
+            ¿Cuántas veces las has tenido que cambiar o simplemente la memoria ya no es la misma?</h2>
+            <br>
+            <br>
+            <img src="imagenes\img-error.gif" >
+            <br>
+            <br>
+            <h3>Bienvenido al sitio donde con tan solo un click podrás guardar tus contraseñas y datos teniéndolos siempre a la mano 
+                y mucho más confiable que un papel que encontraste en la mesa o el sobre del banco.
+            </h3>
          <br>
          <br>
-        <button id='button-inicio'>comenzar</button>
+        <button id="button-inicio">Comenzar</button>
+     
+     
       </section>
-      <section id='segunda-seccion' class='hide'>
-        <p>Coloca en el siguente espacio tus contraseñas asi como cual quier dato
-          importante que uses diariamente </p>
+      
+      <section id="segunda-seccion" class="hide">
+        <div>
+        <p>Coloca en el siguente espacio tus contraseñas así como cualquier dato
+          importante que uses diariamente. </p>
           <br>
-          <input id='input-text' type='text' placeholder='Escribe tus contraseñas o datos'> <br>
+          <form id="my-form" >
+          <label id="key">Elige un número que se convertirá en tu llave:</label>
+          <input id= "offset-box" type="number"><br> <br>
+          <input id="input-text" type="text" placeholder="Escribe tus contraseñas o datos"> <br>
           <br>
-          <button id='button-key'>Guardar</button>
-      </section>
-      </div>
+          <p id="exit-box"></p>
+        </form>
+          <br>
+          <button id="button-padlock">Cifrar</button>
+          <button id= "button-key">Decifrar</button>
+          <button id= "button-clear">Limpiar</button>
+        </div>  
+      </section> 
+        
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
