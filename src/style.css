@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css?family=Acme|Lobster|Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Acme|Lobster|Permanent+Marker|Courgette&display=swap');
 
 .hide {
     display: none;
@@ -22,8 +22,9 @@ input#input-text{
     width: 600px;
     height: 200px;
     background-color: tan;
-    font-family: 'Permanent Marker', cursive;
-    
+    font-family: 'Courgette', cursive;
+    text-align: center;
+    font-size: large;
 }
 
 
@@ -61,11 +62,12 @@ h3{
     font-family: 'Acme', sans-serif;
     font-size: x-large;
     font-weight: 500;
-    color: beige;  
+    color: beige; 
+     
 }
-label#key{
+label{
     font-family: 'Acme', sans-serif;
-    font-size: medium;
+    font-size: large;
     font-weight: 700;
 }
 
@@ -75,13 +77,33 @@ button{
     border-radius: 28px;
     
    text-shadow: 3px 2px 1px#9daef5;
-  -webkit-box-shadow: 6px 5px 24px #666666;
-  -moz-box-shadow: 6px 5px 24px #666666;
-  box-shadow: 6px 5px 24px #666666; 
+  -webkit-box-shadow: 6px 5px 14px #666666;
+  -moz-box-shadow: 6px 5px 14px #666666;
+  box-shadow: 6px 5px 14px #666666; 
   
-  font-family: 'Permanent Marker', cursive;
+  font-family:'Courgette', cursive;
   font-size: 27px;
   padding: 19px;
   text-decoration: none;
   margin-bottom: 25px;
+}
+input#lada{
+    width: 49px;
+    height: 20px;  
+    font-family: 'Courgette', cursive;
+    text-align: center;
+    font-size: large;
+}
+
+input#number{
+    width: 120px;
+    height: 20px;  
+    font-family: 'Courgette', cursive;
+    text-align: center;
+    font-size: large;   
+}
+
+button#enviar{
+    font-size: 15px;
+    padding: 9px;
 }

@@ -6,8 +6,8 @@ const buttonPadlock = document.getElementById('button-padlock');
 const offset = document.getElementById ('offset-box');
 const buttonKey = document.getElementById ('button-key');
 const buttonClear = document.getElementById ('button-clear');
-
-
+const buttonSobre = document.getElementById ("boton-sobre");
+const buttonEnviar= document.getElementById("enviar");
 
 const siguientePagina = () => {
 hidePrimeraSeccion.classList.add('hide');
@@ -30,7 +30,21 @@ buttonKey.addEventListener('click', ( ) => {
     blankSpace.innerHTML = result;
 });
 
+
 buttonClear.addEventListener('click',() => {
     document.getElementById('my-form').reset();
     document.getElementById('exit-box').innerHTML = '';
 })
+
+const inicioPagina = () => {
+    showSegundaSeccion.classList.add('hide');
+    hidePrimeraSeccion.classList.remove('hide');
+}
+buttonSobre.addEventListener('click',inicioPagina);
+ 
+buttonEnviar.addEventListener('click',()=>{
+ window.open("https://wa.me/ladanumber?text=exit-box",'whast');
+})
+
+
+
